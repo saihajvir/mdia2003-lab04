@@ -36,6 +36,7 @@ html {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+
 }
 
 /*
@@ -99,11 +100,10 @@ h1{
    ========================================================================== */
 
    div, section, header, footer {
-     border: 1px solid #CCC;
+     /* border: 1px solid #CCC; */
    }
 
    .column{
-     background-color: lightblue;
      margin: 1rem;
    }
 
@@ -115,7 +115,42 @@ h1{
    
    /* Small only */
    @media screen and (max-width: 39.9375em) {
-     
+     .menu{
+       display: none;
+     }
+     .hero{
+       display: none;
+     }
+     .para{
+      color: grey;
+      font-size: 0.6rem;
+      line-height: 1.5rem;
+      text-align: center;   
+    }
+    .thingsofabove{
+      display: none;
+    }
+    .sponsors{
+      display: none;
+    }
+
+    .page__footer{
+      color: white;
+      padding: 50px;
+    }
+    .peeweeAvatar{
+      width: 50%;
+    }
+    .about{
+      display: none;
+    }
+    .flickr{
+      display: none;
+    }
+    .newsletter{
+      display: none;
+    }
+    
   }
   
   
@@ -137,7 +172,7 @@ h1{
     }
 
     .m-col-4{
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .m-col-5{
@@ -153,7 +188,63 @@ h1{
       grid-column-end: -1;
     }
 
+    .para{
+      color: grey;
+      font-size: 0.6rem;
+      line-height: 1.5rem;
+      text-align: center;   
+    }
+    .peeweeAvatar{
+      width: 10%;
+    }
+    .peewee_intro{
+      font-size: 0.8rem;
+      color: white;
+      font-style: italic;
+    }
+    .peeweeHeading{
+      display: inline;
+      color: white;
+    }
+    .tweets{
+      color: white;
+      font-size: 0.8rem;
+      margin: 10px;
+    }
+    .page__footer{
+      color: white;
+    }
+    .menu{
+      display: flex;
+      height: 100%;
+    }
+
+    .box{
+      flex: 1;
+      display: flex;
+      color: white;
+      align-items: flex-end;
+      padding-left: 15px;
+      padding-bottom: 10px;
+    }
+    .one{
+      background-color: lightgreen;
+    }
+    .two{
+      background-color: gold;
+    }
+    .three{
+      background-color: salmon;
+    }
+    .four{
+      background-color: cornflowerblue;
+    }
+    .five{
+      background-color: darkcyan;
+    }
   }
+
+  
 
 
 /* Medium only */
@@ -225,7 +316,7 @@ h1{
    }
 
   .page__footer{
-    background-color: #222;
+    background-color: #16242F;
   }
 /*
  * Hide visually and from screen readers
